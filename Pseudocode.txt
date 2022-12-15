@@ -1,0 +1,15 @@
+// PSEUDOCODE - WORK DAY SCHEDULER
+
+// Display current day at the top of the application when it is opened
+  // use moment.js to display current day at the top of the application
+
+
+//Create a For Loop that loops starting at 9am and breaks at 5pm
+  - For each loop generate or build an html timeblock row
+     * Append timeblock to container 
+	   ** Hour - a number corresponding with the hour in 12 hour format
+	   ** Textarea - Show existing event text, if any and allow user to input event text
+	   ** Save Button 
+	     - When clicked, store/reset the event text corresponding with the hour to localStorage
+	   ** Increase hour by one
+	   ** Check if hour is past, current or future and apply corresponding css class to timeblock
