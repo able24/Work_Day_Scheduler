@@ -33,7 +33,7 @@ Once it saved, it will store in their local storage.
 This planner/scheduler is desktop and mobile compatible.
 
 ## URL
-https://able24.github.io/Work-Day-Scheduler/
+https://able24.github.io/Work_Day_Scheduler/
 
 
 ## Mock-Up
