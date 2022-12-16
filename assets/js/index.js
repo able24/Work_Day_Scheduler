@@ -24,6 +24,15 @@ while (startOfWork.hour() < 18) {
   startOfWork.add(1, "hours");
 }
 
+// Once a task is saved, a pop up notification shows up for about 2s to say tasked was successfully saved
+function alertForSavedTask () {
+  $("#hidden").show();
+  setTimeout(function() {
+    $("#hidden").hide();
+  }, 2000);
+}
+
+
 // Assign saveBtn click listener for user task input and time stamp??
 $(".saveBtn").on("click", function () {
   // Get task and corresponding time.
@@ -34,6 +43,8 @@ $(".saveBtn").on("click", function () {
 
   // Save task and time of task in local storage.
   localStorage.setItem(keyName, task);
+
+  alertForSavedTask(); // Calling notification function for saved tasks
 });
 
 //function to check each hour block to see if task is in the past, present, or future.

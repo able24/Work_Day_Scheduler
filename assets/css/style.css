@@ -21,6 +21,13 @@ textarea {
   border-bottom: 10px solid black;
 }
 
+#hidden {
+  font-size: 13px;
+  color: #c42525;
+  display: none;
+  margin-left: 40%;
+}
+
 .description {
   white-space: pre-wrap;
 }
